@@ -1,0 +1,169 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const updated = '28 March 2026';
+---
+
+<Layout
+  title="Privacy Policy"
+  description="How NurseAbroad collects, uses, and protects your personal data."
+>
+  <Header />
+
+  <main class="pt-28 pb-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3">Privacy Policy</h1>
+      <p class="text-sm text-gray-500 mb-12">Last updated: {updated}</p>
+
+      <div class="prose prose-gray max-w-none">
+
+        <h2>1. Who we are</h2>
+        <p>
+          NurseAbroad ("<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>") is a mobile application and website that helps nurses find jobs abroad. The app is available on Android via Google Play. The website is hosted at <strong>nurseabroad.app</strong>.
+        </p>
+        <p>
+          For any privacy questions, contact us at: <a href="mailto:hello@nurseabroad.app">hello@nurseabroad.app</a>
+        </p>
+
+        <h2>2. What data we collect and why</h2>
+
+        <h3>2.1 Account data</h3>
+        <p>
+          When you create an account we collect your <strong>email address</strong> and <strong>display name</strong> (via Google Sign-In or email/password). We use this to identify your account and personalise your experience.
+        </p>
+
+        <h3>2.2 Profile and resume data</h3>
+        <p>
+          You may voluntarily provide information such as your <strong>nursing specialty</strong>, <strong>years of experience</strong>, <strong>target countries</strong>, and the content of your <strong>resume</strong> (work history, education, certifications). This data is stored in Firestore under your user account and used to power the resume builder and job alert preferences.
+        </p>
+
+        <h3>2.3 Job alert preferences</h3>
+        <p>
+          We store the <strong>countries</strong> and <strong>specialties</strong> you select as job alert filters. These are used solely to send you relevant push notifications.
+        </p>
+
+        <h3>2.4 Application activity</h3>
+        <p>
+          When you apply to a job or save a listing, we record that action (job ID, timestamp, status) so you can track your applications within the app.
+        </p>
+
+        <h3>2.5 Device and usage data</h3>
+        <p>
+          We use <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> to collect anonymous usage statistics and crash reports. This includes device model, OS version, app version, and screen-visit events. No personally identifiable information is sent to Analytics.
+        </p>
+
+        <h3>2.6 Push notification tokens</h3>
+        <p>
+          We store your <strong>FCM (Firebase Cloud Messaging) device token</strong> to deliver push notifications. You can disable notifications at any time in your device settings.
+        </p>
+
+        <h2>3. Legal basis for processing (GDPR)</h2>
+        <p>
+          Where the GDPR applies, we process your data on the following legal bases:
+        </p>
+        <ul>
+          <li><strong>Contract performance</strong> — account data and profile data are necessary to provide the service.</li>
+          <li><strong>Legitimate interests</strong> — crash reporting and analytics to maintain and improve the app.</li>
+          <li><strong>Consent</strong> — push notifications (you may withdraw consent at any time).</li>
+        </ul>
+
+        <h2>4. How we store and protect your data</h2>
+        <p>
+          All data is stored in <strong>Google Firebase</strong> (Firestore and Firebase Auth), hosted in the <strong>us-central1</strong> region (Iowa, USA). Firebase applies encryption at rest and in transit. Access to Firestore is restricted by security rules so that each user can only read and write their own data.
+        </p>
+        <p>
+          We do not sell, rent, or share your personal data with third parties for marketing purposes.
+        </p>
+
+        <h2>5. Third-party services</h2>
+        <p>The app uses the following third-party services, each governed by their own privacy policies:</p>
+        <ul>
+          <li><strong>Google Firebase</strong> (Auth, Firestore, Analytics, Crashlytics, Cloud Messaging) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+          <li><strong>Google Sign-In</strong> — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        </ul>
+
+        <h2>6. Data retention</h2>
+        <p>
+          We retain your data for as long as your account is active. If you delete your account (available in the app under Settings → Delete Account), all personal data stored in Firestore is permanently deleted. Firebase Auth data is deleted simultaneously. Analytics and Crashlytics data is anonymised and cannot be linked back to you once your account is deleted.
+        </p>
+
+        <h2>7. Your rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li><strong>Access</strong> the personal data we hold about you.</li>
+          <li><strong>Correct</strong> inaccurate data by updating your profile in the app.</li>
+          <li><strong>Delete</strong> your account and all associated data via Settings → Delete Account, or by emailing us.</li>
+          <li><strong>Object</strong> to processing or withdraw consent for push notifications at any time.</li>
+          <li><strong>Data portability</strong> — request a copy of your data by emailing us.</li>
+        </ul>
+        <p>
+          To exercise any right, contact us at <a href="mailto:hello@nurseabroad.app">hello@nurseabroad.app</a>. We will respond within 30 days.
+        </p>
+
+        <h2>8. Children</h2>
+        <p>
+          NurseAbroad is intended for adults (18+) working as registered nurses. We do not knowingly collect data from anyone under 18. If you believe a minor has registered, contact us and we will delete the account immediately.
+        </p>
+
+        <h2>9. Changes to this policy</h2>
+        <p>
+          We may update this policy from time to time. The "Last updated" date at the top will reflect any changes. Continued use of the app after an update constitutes acceptance of the revised policy.
+        </p>
+
+        <h2>10. Contact</h2>
+        <p>
+          For any privacy concerns, data requests, or complaints:<br />
+          <a href="mailto:hello@nurseabroad.app">hello@nurseabroad.app</a>
+        </p>
+
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .prose h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .prose h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-top: 1.25rem;
+    margin-bottom: 0.375rem;
+  }
+  .prose p {
+    color: #4b5563;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+  .prose ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #4b5563;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+  .prose li {
+    margin-bottom: 0.375rem;
+  }
+  .prose a {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  .prose a:hover {
+    color: #1d4ed8;
+  }
+  .prose strong {
+    color: #111827;
+    font-weight: 600;
+  }
+</style>

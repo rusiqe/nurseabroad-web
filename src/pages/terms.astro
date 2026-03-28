@@ -1,0 +1,170 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const updated = '28 March 2026';
+---
+
+<Layout
+  title="Terms of Service"
+  description="Terms and conditions for using the NurseAbroad app and website."
+>
+  <Header />
+
+  <main class="pt-28 pb-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3">Terms of Service</h1>
+      <p class="text-sm text-gray-500 mb-12">Last updated: {updated}</p>
+
+      <div class="prose prose-gray max-w-none">
+
+        <h2>1. Acceptance of terms</h2>
+        <p>
+          By downloading, installing, or using the NurseAbroad app or website ("<strong>Service</strong>"), you agree to be bound by these Terms of Service ("<strong>Terms</strong>"). If you do not agree, do not use the Service.
+        </p>
+        <p>
+          These Terms constitute the entire agreement between you and NurseAbroad regarding the Service.
+        </p>
+
+        <h2>2. Description of Service</h2>
+        <p>
+          NurseAbroad is a free mobile application and website that aggregates nursing job listings from third-party sources and provides tools including a resume builder, job alerts, and application tracker. The Service is provided free of charge — there are no subscriptions or paywalls.
+        </p>
+
+        <h2>3. Eligibility</h2>
+        <p>
+          You must be at least 18 years old and a qualified or student nurse to use the Service. By creating an account, you confirm that you meet these requirements.
+        </p>
+
+        <h2>4. Your account</h2>
+        <p>
+          You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account. Notify us immediately at <a href="mailto:hello@nurseabroad.app">hello@nurseabroad.app</a> if you suspect unauthorised access.
+        </p>
+        <p>
+          You may delete your account at any time via Settings → Delete Account in the app. Deletion is permanent and irreversible.
+        </p>
+
+        <h2>5. Job listings</h2>
+        <p>
+          Job listings displayed in NurseAbroad are aggregated from third-party sources (NHS Jobs, Reed, Adzuna, EURES, USA Jobs, and others). We do not create, control, or verify the accuracy of individual listings. We are not a recruitment agency and do not act as an employer or intermediary.
+        </p>
+        <p>
+          <strong>NurseAbroad makes no warranties, express or implied, regarding the accuracy, completeness, or availability of any job listing.</strong> You should independently verify any listing before applying.
+        </p>
+        <p>
+          When you tap "Apply", you are directed to the employer's or job board's own website. The application process, employment contract, and any subsequent relationship is solely between you and the employer.
+        </p>
+
+        <h2>6. Resume builder</h2>
+        <p>
+          The resume builder is a self-service tool. You are solely responsible for the accuracy and legality of the information you enter. Do not include false credentials or misrepresent your qualifications.
+        </p>
+
+        <h2>7. Acceptable use</h2>
+        <p>You agree not to:</p>
+        <ul>
+          <li>Use the Service for any unlawful purpose.</li>
+          <li>Scrape, crawl, or systematically extract data from the Service.</li>
+          <li>Attempt to reverse-engineer, decompile, or disassemble any part of the app.</li>
+          <li>Upload or transmit viruses or malicious code.</li>
+          <li>Impersonate another person or create a false identity.</li>
+          <li>Use the Service to harass, threaten, or harm others.</li>
+        </ul>
+
+        <h2>8. Intellectual property</h2>
+        <p>
+          All content and software in the Service (excluding job listings sourced from third parties) is owned by NurseAbroad or its licensors and is protected by copyright and other intellectual property laws. You are granted a limited, non-exclusive, non-transferable licence to use the app on your personal device for its intended purpose.
+        </p>
+
+        <h2>9. Disclaimers</h2>
+        <p>
+          THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED BY LAW, NURSEABROAD DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+        </p>
+        <p>
+          We do not warrant that the Service will be uninterrupted, error-free, or that job listings will be accurate or up to date.
+        </p>
+
+        <h2>10. Limitation of liability</h2>
+        <p>
+          TO THE MAXIMUM EXTENT PERMITTED BY LAW, NURSEABROAD SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE SERVICE, INCLUDING BUT NOT LIMITED TO LOSS OF EARNINGS, MISSED JOB OPPORTUNITIES, OR RELIANCE ON INACCURATE JOB LISTINGS.
+        </p>
+        <p>
+          Our total aggregate liability to you shall not exceed £100.
+        </p>
+
+        <h2>11. Third-party links and services</h2>
+        <p>
+          The Service contains links to third-party websites and job boards. These are provided for convenience only. We have no control over third-party content and are not responsible for it. Accessing third-party sites is at your own risk and subject to their terms and privacy policies.
+        </p>
+
+        <h2>12. Modifications to the Service</h2>
+        <p>
+          We reserve the right to modify, suspend, or discontinue the Service (or any part of it) at any time without notice. We will not be liable to you for any modification, suspension, or discontinuation.
+        </p>
+
+        <h2>13. Changes to these Terms</h2>
+        <p>
+          We may update these Terms from time to time. The "Last updated" date at the top reflects changes. Continued use of the Service after an update constitutes acceptance of the revised Terms. If you do not agree with the new Terms, you must stop using the Service.
+        </p>
+
+        <h2>14. Governing law</h2>
+        <p>
+          These Terms are governed by and construed in accordance with the laws of <strong>England and Wales</strong>. Any disputes shall be subject to the exclusive jurisdiction of the courts of England and Wales.
+        </p>
+
+        <h2>15. Contact</h2>
+        <p>
+          For any questions about these Terms:<br />
+          <a href="mailto:hello@nurseabroad.app">hello@nurseabroad.app</a>
+        </p>
+
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .prose h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .prose h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-top: 1.25rem;
+    margin-bottom: 0.375rem;
+  }
+  .prose p {
+    color: #4b5563;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+  .prose ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #4b5563;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+  .prose li {
+    margin-bottom: 0.375rem;
+  }
+  .prose a {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  .prose a:hover {
+    color: #1d4ed8;
+  }
+  .prose strong {
+    color: #111827;
+    font-weight: 600;
+  }
+</style>

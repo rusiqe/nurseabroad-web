@@ -1,0 +1,267 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const features = [
+  {
+    icon: '🌍',
+    title: 'Jobs in 8+ countries',
+    desc: 'Browse verified nursing vacancies in the UK, USA, Australia, Canada, Germany, Netherlands, Norway and remote roles — all in one place.',
+  },
+  {
+    icon: '🔔',
+    title: 'Real-time alerts',
+    desc: 'Set your country and specialty preferences. Get a push notification the moment a matching job is posted.',
+  },
+  {
+    icon: '📄',
+    title: 'Resume builder',
+    desc: 'Create a professional English-language CV formatted for the international market. No Word doc needed.',
+  },
+  {
+    icon: '📋',
+    title: 'Application tracker',
+    desc: 'Track every application — from Applied to Interview to Offer. Know when an employer views your application.',
+  },
+  {
+    icon: '🔖',
+    title: 'Save & filter',
+    desc: 'Bookmark jobs to revisit. Filter by country, specialty, and contract type to find your perfect role fast.',
+  },
+  {
+    icon: '🆓',
+    title: 'Free, always',
+    desc: 'No subscription, no paywall, no hidden fees. Every feature is free for every nurse.',
+  },
+];
+
+const steps = [
+  {
+    num: '01',
+    title: 'Create your account',
+    desc: 'Sign up in seconds with your email or Google account.',
+  },
+  {
+    num: '02',
+    title: 'Build your resume',
+    desc: 'Use the built-in resume builder to create a professional profile ready for international employers.',
+  },
+  {
+    num: '03',
+    title: 'Apply and track',
+    desc: 'Browse jobs, set alerts for your specialties, apply in one tap, and track every application.',
+  },
+];
+
+const countries = [
+  { flag: '🇬🇧', name: 'United Kingdom' },
+  { flag: '🇺🇸', name: 'USA' },
+  { flag: '🇦🇺', name: 'Australia' },
+  { flag: '🇨🇦', name: 'Canada' },
+  { flag: '🇩🇪', name: 'Germany' },
+  { flag: '🇳🇱', name: 'Netherlands' },
+  { flag: '🇳🇴', name: 'Norway' },
+  { flag: '🌐', name: 'Remote' },
+];
+---
+
+<Layout title="NurseAbroad" description="Find nursing jobs abroad — UK, USA, Australia, Canada, EU and remote. Free job alerts, resume builder, and application tracker for nurses.">
+  <Header transparent />
+
+  <!-- ── Hero ──────────────────────────────────────────────────────────── -->
+  <section class="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white overflow-hidden">
+    <!-- Background pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)" />
+      </svg>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 lg:pt-40 lg:pb-28">
+      <div class="max-w-2xl">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 bg-white/15 border border-white/25 rounded-full px-4 py-1.5 text-sm font-medium mb-6">
+          <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+          Free for nurses, forever
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+          Your nursing career,<br />
+          <span class="text-blue-200">anywhere in the world.</span>
+        </h1>
+
+        <p class="text-xl text-blue-100 leading-relaxed mb-10 max-w-xl">
+          Browse thousands of verified nursing jobs in the UK, USA, Australia, Canada and Europe.
+          Get instant alerts. Apply in one tap. Track everything — all free.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <!-- Google Play -->
+          <a
+            href="https://play.google.com/store/apps/details?id=app.nurseabroad"
+            target="_blank"
+            rel="noopener"
+            class="inline-flex items-center gap-3 bg-white text-gray-900 hover:bg-blue-50 font-semibold px-6 py-3.5 rounded-xl transition-colors shadow-lg"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.18 23.76c.37.21.8.22 1.17.04l12.7-7.12-2.62-2.63-11.25 9.71zM20.67 9.79L17.37 7.9l-2.95 2.95 2.95 2.95 3.32-1.87a1.49 1.49 0 000-2.14zM1.37.56A1.49 1.49 0 001 1.48v21.04c0 .36.13.69.37.92l.09.08 11.79-11.79v-.28L1.37.56zM14.72 10.15L3.35.44l-.07-.06c.37-.2.82-.19 1.17.04l12.22 6.87-2.95 2.86z" fill="#34A853"/>
+              <path d="M14.72 10.15L3.35.44l-.07-.06c.37-.2.82-.19 1.17.04l12.22 6.87-2.95 2.86z" fill="#FBBC04"/>
+              <path d="M1.46 23.44c.24.23.57.36.91.32l.09-.08 11.79-11.79v-.28L3.35.44 1.46.56A1.49 1.49 0 001 1.48v21.04c0 .36.13.69.37.92z" fill="#4285F4"/>
+              <path d="M20.67 9.79L17.37 7.9l-2.95 2.95L3.18 23.76l.07-.04 17.42-9.78a1.49 1.49 0 000-2.14z" fill="#EA4335"/>
+            </svg>
+            Download on Google Play
+          </a>
+
+          <a
+            href="/#features"
+            class="inline-flex items-center gap-2 border-2 border-white/40 hover:border-white text-white font-semibold px-6 py-3.5 rounded-xl transition-colors"
+          >
+            See features
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Social proof -->
+        <p class="mt-8 text-sm text-blue-200">
+          Trusted by nurses seeking careers in the UK, EU, and beyond
+        </p>
+      </div>
+    </div>
+
+    <!-- Wave divider -->
+    <div class="absolute bottom-0 left-0 right-0">
+      <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 60L1440 60L1440 0C1200 50 240 50 0 0L0 60Z" fill="white"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ── Stats bar ──────────────────────────────────────────────────────── -->
+  <section class="py-12 bg-white border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        {[
+          { value: '1,000+', label: 'Active job listings' },
+          { value: '8+', label: 'Countries covered' },
+          { value: '20+', label: 'Nursing specialties' },
+          { value: '£0', label: 'Cost to use' },
+        ].map((stat) => (
+          <div>
+            <div class="text-3xl font-extrabold text-primary-600 mb-1">{stat.value}</div>
+            <div class="text-sm text-gray-500 font-medium">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Features ───────────────────────────────────────────────────────── -->
+  <section id="features" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
+          Everything you need to land a job abroad
+        </h2>
+        <p class="text-lg text-gray-500 max-w-xl mx-auto">
+          Built specifically for nurses. No noise, no subscriptions — just the tools you need.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {features.map((f) => (
+          <div class="group p-6 rounded-2xl border border-gray-100 hover:border-primary-200 hover:shadow-md hover:shadow-primary-50 transition-all">
+            <div class="text-4xl mb-4">{f.icon}</div>
+            <h3 class="font-bold text-gray-900 mb-2">{f.title}</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">{f.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── How it works ───────────────────────────────────────────────────── -->
+  <section id="how-it-works" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
+          Up and running in minutes
+        </h2>
+        <p class="text-lg text-gray-500">Three steps to your next role.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {steps.map((step, i) => (
+          <div class="relative">
+            {i < steps.length - 1 && (
+              <div class="hidden md:block absolute top-8 left-full w-full h-px bg-primary-100 -translate-x-4 z-0" />
+            )}
+            <div class="relative bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+              <div class="w-12 h-12 bg-primary-600 text-white font-extrabold text-lg rounded-xl flex items-center justify-center mb-5">
+                {step.num}
+              </div>
+              <h3 class="font-bold text-gray-900 text-lg mb-2">{step.title}</h3>
+              <p class="text-sm text-gray-500 leading-relaxed">{step.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Countries ─────────────────────────────────────────────────────── -->
+  <section id="countries" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
+          Where will you go next?
+        </h2>
+        <p class="text-lg text-gray-500">
+          Jobs updated daily from NHS Jobs, Reed, Adzuna, EURES, USA Jobs and more.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-3">
+        {countries.map((c) => (
+          <div class="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-full px-5 py-2.5 text-sm font-semibold text-gray-700 hover:border-primary-300 hover:bg-primary-50 hover:text-primary-700 transition-colors cursor-default">
+            <span class="text-xl">{c.flag}</span>
+            {c.name}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Download CTA ───────────────────────────────────────────────────── -->
+  <section class="py-20 bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">
+        Your next role is waiting.
+      </h2>
+      <p class="text-xl text-blue-100 mb-10">
+        Download NurseAbroad for free and start applying today.
+      </p>
+
+      <a
+        href="https://play.google.com/store/apps/details?id=app.nurseabroad"
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center gap-3 bg-white text-gray-900 hover:bg-blue-50 font-bold px-8 py-4 rounded-xl transition-colors shadow-xl text-lg"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.18 23.76c.37.21.8.22 1.17.04l12.7-7.12-2.62-2.63-11.25 9.71zM20.67 9.79L17.37 7.9l-2.95 2.95 2.95 2.95 3.32-1.87a1.49 1.49 0 000-2.14zM1.37.56A1.49 1.49 0 001 1.48v21.04c0 .36.13.69.37.92l.09.08 11.79-11.79v-.28L1.37.56zM14.72 10.15L3.35.44l-.07-.06c.37-.2.82-.19 1.17.04l12.22 6.87-2.95 2.86z" fill="#34A853"/>
+        </svg>
+        Download on Google Play — it's free
+      </a>
+
+      <p class="mt-5 text-sm text-blue-200">Android · No subscription · No paywall</p>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

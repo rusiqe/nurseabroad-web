@@ -1,0 +1,61 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-gray-900 text-gray-400">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="white"/></svg>
+          </div>
+          <span class="font-bold text-white">NurseAbroad</span>
+        </div>
+        <p class="text-sm leading-relaxed">
+          The free job app for nurses seeking opportunities in the UK, USA, Australia, Canada, EU, and beyond.
+        </p>
+      </div>
+
+      <!-- App -->
+      <div>
+        <h4 class="text-white font-semibold text-sm mb-4">App</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/#features" class="hover:text-white transition-colors">Features</a></li>
+          <li><a href="/#how-it-works" class="hover:text-white transition-colors">How it works</a></li>
+          <li><a href="/#countries" class="hover:text-white transition-colors">Countries</a></li>
+          <li>
+            <a
+              href="https://play.google.com/store/apps/details?id=app.nurseabroad"
+              target="_blank"
+              rel="noopener"
+              class="hover:text-white transition-colors"
+            >
+              Download on Google Play
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h4 class="text-white font-semibold text-sm mb-4">Legal</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="/terms" class="hover:text-white transition-colors">Terms of Service</a></li>
+          <li><a href="mailto:hello@nurseabroad.app" class="hover:text-white transition-colors">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+      <p>&copy; {year} NurseAbroad. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="/privacy" class="hover:text-white transition-colors">Privacy</a>
+        <a href="/terms" class="hover:text-white transition-colors">Terms</a>
+        <a href="mailto:hello@nurseabroad.app" class="hover:text-white transition-colors">hello@nurseabroad.app</a>
+      </div>
+    </div>
+  </div>
+</footer>
